@@ -1,0 +1,131 @@
+main {
+}
+
+.content {
+  margin: 0 auto;
+  padding: 40px 35px;
+}
+
+.epcBelang {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(235, 234, 235, 1);
+}
+
+.epc {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+main h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  font-style: normal;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+main p {
+  font-size: 1.6rem;
+}
+
+.content p {
+  text-align: justify;
+}
+
+.impNote * {
+  font-size: 1.6rem;
+}
+
+.epcVoordelen,
+.epcSterkePunten {
+  background-color: rgba(72, 132, 88, 1);
+}
+
+.epcVoordelen *,
+.epcSterkePunten * {
+  color: #fff;
+}
+
+.epcNuttigeDocumenten p,
+li {
+  font-size: 1.6rem;
+}
+
+.epcNuttigeDocumenten p {
+  text-align: center;
+}
+
+.epcProcedure .content {
+  border-bottom: 1px solid #000;
+}
+
+ul,
+ol {
+  margin-top: 25px;
+  margin-left: 25px;
+}
+
+li {
+  margin-bottom: 15px;
+}
+
+li::marker {
+  font-size: 0.8em;
+}
+
+@media screen and (min-width: 749px) {
+  main {
+    width: 100%;
+  }
+
+  main h2 {
+    font-size: 3.2em;
+  }
+
+  main > * {
+    margin: inherit;
+  }
+
+  .epc {
+    width: 30%;
+    margin: 0;
+  }
+
+  .content section:first-of-type {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .content section div {
+    margin-left: 50px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .content {
+    width: 1300px;
+    margin: 0 auto;
+  }
+
+  .typeWoningen {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .typeWoningen > * {
+    width: 25%;
+    padding: 25px;
+  }
+
+  .epcVoordelen .content,
+  .epcGoedOmTeWeten .content,
+  .epcNuttigeDocumenten .content,
+  .epcSterkePunten .content,
+  .epcProcedure .content {
+    width: 900px;
+  }
+}

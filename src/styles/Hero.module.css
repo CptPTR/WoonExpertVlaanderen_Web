@@ -1,0 +1,89 @@
+.hero {
+  height: calc(100vh - 90px);
+  background: url("https://images.squarespace-cdn.com/content/v1/62c1f06c12fe7a231d800e69/1663186031033-IGSJ2VGDUGZTPSY4NY87/unsplash-image-wDDfbanbhl8.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 24px;
+}
+
+.hero h1 {
+  font-size: 3.6em;
+}
+
+.hero p {
+  margin-top: 30px;
+  font-size: 1.8rem;
+  line-height: 35px;
+}
+
+.hero form button {
+  padding: 15px 30px;
+  margin-top: 10px;
+  border: none;
+}
+
+.hero form button span {
+  font-size: 2rem;
+  font-family: "Poppins";
+  font-weight: 300;
+}
+
+.name label,
+.email label,
+.phone label {
+  font-size: 1.6rem;
+}
+
+.name input,
+.email input,
+.phone input {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  padding: 12px;
+  outline: none;
+  border: none;
+  font-size: 1.6rem;
+}
+
+.overlay {
+  height: inherit;
+  width: 100%;
+  background-color: rgba(30, 81, 54, 0.7);
+}
+
+.content {
+  height: 100%;
+  padding: 45px 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 749px) {
+  .hero {
+    height: calc(100vh - 120px);
+  }
+
+  .overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+  }
+
+  .content {
+    width: 1700px;
+    height: 50%;
+    /* margin-top: 120px; */
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+  }
+
+  .content > * {
+    width: 40%;
+  }
+}

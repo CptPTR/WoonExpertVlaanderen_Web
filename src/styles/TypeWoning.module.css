@@ -1,0 +1,23 @@
+.typeWoning {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.typeWoning img {
+  width: 60%;
+}
+
+.typeWoning h3 {
+  font-size: 1.8em;
+}
+
+.typeWoning p {
+  font-size: 1.5em;
+}
+
+.extra {
+  margin-top: 15px;
+}

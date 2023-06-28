@@ -1,0 +1,47 @@
+.dropdown {
+  background-color: rgba(127, 181, 103, 1);
+  color: #fff;
+  margin: 0 auto;
+  padding: 20px;
+  position: absolute;
+  top: 95px;
+  transition: all 0.5s ease-out;
+  width: 98%;
+  z-index: -1;
+  left: 1%;
+}
+
+.phone,
+.email {
+  display: flex;
+  align-items: center;
+}
+
+.dropdown .email,
+.dropdown .phone {
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.dropdown .email:hover,
+.dropdown .phone:hover {
+  background-color: #fff;
+  color: rgba(127, 181, 103, 1);
+  cursor: pointer;
+}
+
+.email span,
+.phone span {
+  margin-left: 7px;
+  font-size: 1.9em;
+}
+
+.slideUp {
+  transform: translateY(-143px);
+}
+
+@media screen and (min-width: 749px) {
+  .dropdown {
+    display: none;
+  }
+}
